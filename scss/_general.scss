@@ -1,6 +1,7 @@
 html {
 	height: 100%;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -9,13 +10,32 @@ html {
 	box-sizing: inherit;
 	scroll-behavior: smooth;
 }
-
+main{
+	flex-grow: 1;
+}
 
 body {
-	font-family:  'Arial', 'sans-serif';
+	font-family: 'Montserrat', sans-serif;
 	margin: 0;
 	padding: 0;
+	background: #1C1C1E;
+	background-image: url("../images/bg.svg");
+	background-repeat: no-repeat;
+	background-size: 642px;
+	background-position-x: calc(100%);
+    background-position-y: calc(400%);
 
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 2.50px;
+        height: 100%;
+        background-color:#fff;
+		left: calc(50% + 112px);
+		top: 0;
+    }
 }
 
 img {
@@ -23,6 +43,3 @@ img {
 	height: auto;
 	vertical-align: middle;
 }
-
-
-

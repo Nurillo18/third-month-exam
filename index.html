@@ -5,9 +5,121 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Template Repo</title>
+  <title>Soffit site</title>
 </head>
 <body>
+<div class="container">
+<header class="site-header">
+  <div class="header">
+    <a class="header__link" href="./index.html">
+      <img class="header__img" src="./images/site-logo.svg" alt="site-logo" width="106" height="43">
+    </a>
+    <div class="header__left">
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__item-link" href="#">
+            Services
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__item-link" href="#">
+            Portfolio
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__item-link" href="#">
+            About us
+          </a>
+        </li>
+      </ul>
+      <div class="header__lengs">
+        <a class="header__lang-link" href="#">
+          Uz
+        </a>
+        <a class="header__lang-link" href="#">
+          Ru
+        </a>
+        <a class="header__lang-link" href="#">
+          En
+        </a>
+      </div>
+      <button class="header__btn">
+        <a class="header__hum-bt" href="#">
+          <img class="header__hamburger-img" src="./images/mobile-opening.svg" alt="opening img" width="20" height="17">
+        </a>
+      </button>
+      <ul class="header__hum-list">
+        <li class="header__hum-item">
+          <a class="header__jum-item-link" href="#">Services</a>
+        </li>
+        <li class="header__hum-item">
+          <a class="header__jum-item-link" href="#">Portfilio</a>
+        </li>
+        <li class="header__hum-item">
+          <a class="header__jum-item-link" href="#">About us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<hr class="line">
+<main class="site-main">
+  <section class="form-section">
+    <div class="form-section-inner">
+      <form class="form" autocomplete="off" action="htps://echo.htmlacademy.ru/" method="POST">
+        <div class="form__right-box">
+          <div class="form__left">
+            <label class="form__label" for="Surname">Ism Familiya
+              <input class="form__inp inp1" type="text" name="name" id="Surname" required placeholder="Ismingisni kiriting">
+            </label>
 
+            <label class="form__label" for="TGusername">Telegram username
+              <input class="form__inp inp2" type="text" name="tgusername" required placeholder="Username">
+            </label>
+
+            <label class="form__label" for="site">
+              Sayni turini tanlang
+              <select class="form__select inp3" name="text" id="">
+                <option class="form__option" value="0">Corparative sayt</option>
+                <option class="form__option" value="1">Qulay sayt</option>
+              </select>
+            </label>
+
+            </div>
+            <div class="form__right">
+              <label class="form__right-lab">
+                Companiyani kiriting
+                <input class="form__right-inp in1" type="text" name="user_company" required placeholder="Companiya">
+              </label>
+              <label class="form__right-lab">
+                Phone number
+                <input class="form__right-inp in2" type="tel" name="user_phone" value="+998 9">
+              </label>
+              <label class="form__right-lab">
+                Sizga bo’glanish usulini tanlang
+                <select class="form__right-sel in3" name="form_select" id="">
+                  <option class="form__right-op" value="0">Telegram</option>
+                  <option class="form__right-op" value="1">Instagram</option>
+                </select>
+              </label>
+            </div>
+        </div>
+        <label class="form__last-lab">
+          Message
+          <input class="form__last-inp" type="text" required  name="user_massage">
+        </label>
+        <button type="submit" class="form__btn">Jo’natish</button>
+      </form>
+      <div class="form-right-content">
+        <h1 class="form-right__title">Ux & Ui design</h1>
+        <p class="form-right__text">In the current tech scenario, one can’t predict what device their user will use to interact with a product. This is why it’s always a good idea to build something that supports all devices. However it is nearly impossible to design for every screen size with so many .</p>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
+
+
+<script src="./js/app.js"></script>
 </body>
 </html>
