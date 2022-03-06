@@ -110,8 +110,8 @@
     list-style-type: none;
 }
 .header__hum-item {
-    width: 100%;
-    padding: 10px 262px 10px 15px;
+    // width: 100%;
+    padding: 10px 179px 10px 15px;
     font-family: "Manrope";
     font-style: normal;
     font-weight: 600;
@@ -135,8 +135,8 @@
     opacity: 0.3;
 
     &:hover {
-        background-color: #0040DD;
         opacity: 1;
+        background-color: #0040DD;
     }
 }
 .header__hum-list{
@@ -149,14 +149,16 @@
     display: block;
 }
 .open {
-
     display: block;
 }
 .nones{
     display: none;
 }
-.block{
+.blet{
     display: block;
+}
+.lastchange{
+    width: 100%;
 }
 @media only screen and (max-width:1129px){
     body::after{
@@ -183,6 +185,9 @@
     .site-header{
         padding-bottom:0;
     }
+    .blet{
+        display: block;
+    }
 }
 @media only screen and (max-width:435px){
     .header__lengs{
@@ -196,4 +201,20 @@
         width: 71px;
         height: 29px;
     }
+    .blet{
+        display: block;
+    }
+    .header__hum-list{
+        margin-top:30px;
+    }
+    .header__left{
+
+        display: flex;
+        justify-content: space-between;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
